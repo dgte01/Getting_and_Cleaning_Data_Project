@@ -1,5 +1,4 @@
-## Downloading the data and preparing the data
-## Use the directory ".data' as working directory
+
 dir <- "C:/Users/David/Downloads/John Hopkins/R/data"
 if(!dir.exists("C:/Users/David/Downloads/John Hopkins/R/data")) dir.create("C:/Users/David/Downloads/John Hopkins/R/data")
 setwd(currdir)
@@ -10,9 +9,7 @@ download.file(downloadurl, zipfile)
 
 if(file.exists(zipfile)) unzip(zipfile)
 
-####
-## Files are downloaded and the following files exist
-##
+
 basedir <- "UCI HAR Dataset"
 featuresp <- paste(basedir, "features.txt", sep="/")
 activitylabelp <- paste(basedir, "activity_labels.txt", sep="/")
